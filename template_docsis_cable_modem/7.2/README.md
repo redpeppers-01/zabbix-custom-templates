@@ -1,6 +1,6 @@
 # DOCSIS Cable Modem Monitoring Template for Zabbix
 
-A comprehensive Zabbix monitoring template for DOCSIS cable modems providing extensive monitoring capabilities through SNMP.
+A comprehensive Zabbix monitoring template for DOCSIS cable modems providing extensive monitoring capabilities through native SNMP monitoring.
 
 ## Features
 
@@ -267,6 +267,32 @@ Example areas covered:
 
 ![Tagging Structure](img/tags.png)
 
+### Triggers
+- Signal level violations
+- Security state changes
+- Performance degradation
+- Hardware issues
+- Configuration problems
+
+### Graphs
+- Signal levels over time
+- Error rates
+- Channel utilization
+- Network traffic
+
+### Triggers
+- Signal level violations
+- Security state changes
+- Performance degradation
+- Hardware issues
+- Configuration problems
+
+### Graphs
+- Signal levels over time
+- Error rates
+- Channel utilization
+- Network traffic
+
 ### Network Interface Discovery
 
 The template uses Low-Level Discovery (LLD) with filtering to automatically detect and monitor network interfaces. The discovery process uses a customizable filter:
@@ -320,37 +346,7 @@ The template includes network traffic graphs for discovered interfaces:
   * Gradient fill for better visibility
   * Auto-scales based on interface speed
 
-### Triggers
-- Signal level violations
-- Security state changes
-- Performance degradation
-- Hardware issues
-- Configuration problems
-
-### Graphs
-- Signal levels over time
-- Error rates
-- Channel utilization
-- Network traffic
-
-## Troubleshooting Priority
-
-1. Physical Layer Issues
-   - Check signal levels
-   - Verify cable connections
-   - Inspect RF path
-
-2. Configuration Problems
-   - Review DOCSIS config
-   - Check provisioning
-   - Verify security settings
-
-3. Performance Issues
-   - Monitor error rates
-   - Track timeout events
-   - Analyze channel stability
-
-## Support
+## Normal Operating Ranges
 
 ### MIBs used for reference
 > Note: These MIBs are listed for reference only and are not required for template operation since all SNMP queries use direct OID numbers.
