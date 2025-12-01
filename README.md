@@ -50,6 +50,23 @@ Comprehensive SNMP monitoring template for BARD MC4000 Series precision HVAC con
 
 [View Full Documentation →](template_bard_4000_series_hvac/7.2/README.md)
 
+### GE/ABB CP841 DC Power System Template
+Location: [template_ge_abb_cp841/7.2/](template_ge_abb_cp841/7.2/)
+
+Comprehensive SNMP monitoring template for GE/ABB CP841 DC power system controllers used in telecommunications infrastructure, data centers, and mission-critical power environments.
+
+**Key Features:**
+- Complete DC power plant monitoring (voltage, current, power output)
+- Comprehensive alarm detection (30+ alarm items)
+- Rectifier management (capacity, count, redundancy tracking)
+- Battery monitoring (state of charge, reserve time, discharge detection)
+- Efficiency control tracking
+- Emergency Power Off (EPO) detection
+- Built-in dashboard with power system overview
+- 100% manual trigger closure support
+
+[View Full Documentation →](template_ge_abb_cp841/7.2/README.md)
+
 ## Repository Structure
 ```
 .
@@ -69,6 +86,12 @@ Comprehensive SNMP monitoring template for BARD MC4000 Series precision HVAC con
 │   └── 7.2/
 │       ├── README.md
 │       ├── template_bard_4000_series_hvac.yaml
+│       └── files/
+│           └── img/
+├── template_ge_abb_cp841/
+│   └── 7.2/
+│       ├── README.md
+│       ├── template_ge_abb_cp841.yaml
 │       └── files/
 │           └── img/
 └── README.md
