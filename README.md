@@ -34,6 +34,22 @@ Comprehensive SNMP monitoring solution for ICEqube CMKT precision cooling units 
 
 [View Full Documentation →](template_ICEqube_CMKT/7.2/README.md)
 
+### BARD MC4000 Series HVAC Template
+Location: [template_bard_4000_series_hvac/7.2/](template_bard_4000_series_hvac/7.2/)
+
+Comprehensive SNMP monitoring template for BARD MC4000 Series precision HVAC controllers used in telecommunications shelters, data centers, and critical infrastructure environments.
+
+**Key Features:**
+- Dual-unit HVAC monitoring with lead/lag role tracking
+- Multi-stage cooling (4 stages) and heating (4 stages) monitoring
+- Critical safety monitoring (fire/smoke shutdown detection)
+- Comprehensive fault detection (10 alarm items)
+- Temperature monitoring (local + 2 remote sensors)
+- Power loss detection for both units
+- Built-in dashboard with system status overview
+
+[View Full Documentation →](template_bard_4000_series_hvac/7.2/README.md)
+
 ## Repository Structure
 ```
 .
@@ -41,11 +57,20 @@ Comprehensive SNMP monitoring solution for ICEqube CMKT precision cooling units 
 │   └── 7.2/
 │       ├── README.md
 │       ├── template_docsis_cable_modem.yaml
-│       └── img/
+│       └── files/
+│           └── img/
 ├── template_ICEqube_CMKT/
 │   └── 7.2/
 │       ├── README.md
-│       └── template_iceqube_cmkt.yaml
+│       ├── template_iceqube_cmkt.yaml
+│       └── files/
+│           └── img/
+├── template_bard_4000_series_hvac/
+│   └── 7.2/
+│       ├── README.md
+│       ├── template_bard_4000_series_hvac.yaml
+│       └── files/
+│           └── img/
 └── README.md
 ```
 
