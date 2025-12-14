@@ -67,6 +67,23 @@ Comprehensive SNMP monitoring template for GE/ABB CP841 DC power system controll
 
 [View Full Documentation →](template_ge_abb_cp841/7.2/README.md)
 
+### MikroTik RDS2216 ROSE Storage Template
+Location: [template_mikrotik_rose_rds2216/7.4/](template_mikrotik_rose_rds2216/7.4/)
+
+Enterprise-grade monitoring template for MikroTik RDS2216 ROSE (RouterOS Enhanced Storage) storage switches providing comprehensive visibility into high-capacity NVMe RAID storage systems through dual monitoring methods.
+
+**Key Features:**
+- 64-bit storage metrics for accurate monitoring of 60TB+ RAID volumes (REST API)
+- Comprehensive NVMe SMART monitoring (51 items per drive)
+- Advanced RAID health tracking (state, space, I/O, filesystem integrity)
+- Complete system health (CPU, memory, temperatures, fans, power)
+- Interactive dashboard with 6 category-specific pages
+- NOC-ready triggers with manual_close support
+- Auto-discovery for CPU cores, interfaces, sensors, RAID arrays, NVMe drives
+- Zabbix 7.4 optimized with graph prototypes
+
+[View Full Documentation →](template_mikrotik_rose_rds2216/7.4/README.md)
+
 ## Repository Structure
 ```
 .
@@ -94,15 +111,22 @@ Comprehensive SNMP monitoring template for GE/ABB CP841 DC power system controll
 │       ├── template_ge_abb_cp841.yaml
 │       └── files/
 │           └── img/
+├── template_mikrotik_rose_rds2216/
+│   └── 7.4/
+│       ├── README.md
+│       ├── template_mikrotik_rose_rds2216.yaml
+│       └── files/
+│           └── img/
 └── README.md
 ```
 
 ## Requirements
 
-- Zabbix Server 7.2 or newer
+- Zabbix Server 7.2 or newer (7.4+ required for MikroTik ROSE template)
 - SNMP access to monitored devices
 - Network connectivity (ICMP and UDP 161)
 - Valid SNMP community string or SNMPv3 credentials
+- REST API access (MikroTik ROSE template only)
 
 ## Installation
 
