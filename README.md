@@ -84,6 +84,22 @@ Enterprise-grade monitoring template for MikroTik RDS2216 ROSE (RouterOS Enhance
 
 [View Full Documentation →](template_mikrotik_rose_rds2216/7.4/README.md)
 
+### Infoblox Grid Manager Template
+Location: [template_infoblox_grid_manager/7.4/](template_infoblox_grid_manager/7.4/)
+
+Production-focused hybrid monitoring template for Infoblox Grid Manager combining SNMP appliance health, WAPI service/DHCP telemetry, and ICMP availability checks.
+
+**Key Features:**
+- Hybrid monitoring model (ICMP + SNMP + HTTPS WAPI)
+- Grid role, HA status, and replication telemetry
+- DHCP utilization and service runtime status via WAPI
+- SmartNIC lan1/lan2/ha traffic and drop metrics
+- Operational dashboard with status and DHCP utilization views
+- Controlled LLD alert rollout with manual-close workflows
+- Truncation guardrails for WAPI max-results handling
+
+[View Full Documentation →](template_infoblox_grid_manager/7.4/README.md)
+
 ## Repository Structure
 ```
 .
@@ -117,16 +133,23 @@ Enterprise-grade monitoring template for MikroTik RDS2216 ROSE (RouterOS Enhance
 │       ├── template_mikrotik_rose_rds2216.yaml
 │       └── files/
 │           └── img/
+├── template_infoblox_grid_manager/
+│   └── 7.4/
+│       ├── README.md
+│       ├── infoblox-grid-manager-template.yaml
+│       └── files/
+│           └── img/
 └── README.md
 ```
 
 ## Requirements
 
-- Zabbix Server 7.2 or newer (7.4+ required for MikroTik ROSE template)
+- Zabbix Server 7.2 or newer (7.4+ required for MikroTik ROSE and Infoblox Grid Manager templates)
 - SNMP access to monitored devices
 - Network connectivity (ICMP and UDP 161)
 - Valid SNMP community string or SNMPv3 credentials
 - REST API access (MikroTik ROSE template only)
+- HTTPS API access on TCP 443 (Infoblox Grid Manager template WAPI)
 
 ## Installation
 
@@ -161,4 +184,4 @@ This project is open source and available under the [MIT License](LICENSE).
 
 ---
 
-**Last Updated:** November 25, 2025
+**Last Updated:** March 13, 2026
