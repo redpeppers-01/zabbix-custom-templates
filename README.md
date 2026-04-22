@@ -4,36 +4,6 @@ This repository contains custom-built monitoring templates for Zabbix monitoring
 
 ## Available Templates
 
-### DOCSIS Cable Modem Template
-Location: [template_docsis_cable_modem/7.2/](template_docsis_cable_modem/7.2/)
-
-A comprehensive SNMP monitoring template for DOCSIS cable modems providing extensive physical layer monitoring, security tracking, and performance metrics.
-
-**Key Features:**
-- Physical layer monitoring (signal power, SNR, microreflections)
-- Advanced pre-equalization analysis with built-in JavaScript processing
-- BPI+ security monitoring
-- Performance metrics and error tracking
-- DOCSIS 1.0-3.1 compatibility
-- Self-contained design (no external scripts required)
-
-[View Full Documentation →](template_docsis_cable_modem/7.2/README.md)
-
-### ICEqube CMKT HVAC Template
-Location: [template_ICEqube_CMKT/7.2/](template_ICEqube_CMKT/7.2/)
-
-Comprehensive SNMP monitoring solution for ICEqube CMKT precision cooling units used in telecommunications huts, data centers, and edge computing sites.
-
-**Key Features:**
-- Complete HVAC health monitoring (10 fault items)
-- Performance metrics (fan speeds, temperatures, voltage)
-- Black-box availability monitoring (ICMP + SNMP)
-- Flexible configuration with user macros
-- Built-in dashboard for operational overview
-- 100% manual trigger closure support
-
-[View Full Documentation →](template_ICEqube_CMKT/7.2/README.md)
-
 ### BARD MC4000 Series HVAC Template
 Location: [template_bard_4000_series_hvac/7.2/](template_bard_4000_series_hvac/7.2/)
 
@@ -49,6 +19,21 @@ Comprehensive SNMP monitoring template for BARD MC4000 Series precision HVAC con
 - Built-in dashboard with system status overview
 
 [View Full Documentation →](template_bard_4000_series_hvac/7.2/README.md)
+
+### DOCSIS Cable Modem Template
+Location: [template_docsis_cable_modem/7.2/](template_docsis_cable_modem/7.2/)
+
+A comprehensive SNMP monitoring template for DOCSIS cable modems providing extensive physical layer monitoring, security tracking, and performance metrics.
+
+**Key Features:**
+- Physical layer monitoring (signal power, SNR, microreflections)
+- Advanced pre-equalization analysis with built-in JavaScript processing
+- BPI+ security monitoring
+- Performance metrics and error tracking
+- DOCSIS 1.0-3.1 compatibility
+- Self-contained design (no external scripts required)
+
+[View Full Documentation →](template_docsis_cable_modem/7.2/README.md)
 
 ### GE/ABB CP841 DC Power System Template
 Location: [template_ge_abb_cp841/7.2/](template_ge_abb_cp841/7.2/)
@@ -67,22 +52,20 @@ Comprehensive SNMP monitoring template for GE/ABB CP841 DC power system controll
 
 [View Full Documentation →](template_ge_abb_cp841/7.2/README.md)
 
-### MikroTik RDS2216 ROSE Storage Template
-Location: [template_mikrotik_rose_rds2216/7.4/](template_mikrotik_rose_rds2216/7.4/)
+### ICEqube CMKT HVAC Template
+Location: [template_ICEqube_CMKT/7.2/](template_ICEqube_CMKT/7.2/)
 
-Enterprise-grade monitoring template for MikroTik RDS2216 ROSE (RouterOS Enhanced Storage) storage switches providing comprehensive visibility into high-capacity NVMe RAID storage systems through dual monitoring methods.
+Comprehensive SNMP monitoring solution for ICEqube CMKT precision cooling units used in telecommunications huts, data centers, and edge computing sites.
 
 **Key Features:**
-- 64-bit storage metrics for accurate monitoring of 60TB+ RAID volumes (REST API)
-- Comprehensive NVMe SMART monitoring (51 items per drive)
-- Advanced RAID health tracking (state, space, I/O, filesystem integrity)
-- Complete system health (CPU, memory, temperatures, fans, power)
-- Interactive dashboard with 6 category-specific pages
-- NOC-ready triggers with manual_close support
-- Auto-discovery for CPU cores, interfaces, sensors, RAID arrays, NVMe drives
-- Zabbix 7.4 optimized with graph prototypes
+- Complete HVAC health monitoring (10 fault items)
+- Performance metrics (fan speeds, temperatures, voltage)
+- Black-box availability monitoring (ICMP + SNMP)
+- Flexible configuration with user macros
+- Built-in dashboard for operational overview
+- 100% manual trigger closure support
 
-[View Full Documentation →](template_mikrotik_rose_rds2216/7.4/README.md)
+[View Full Documentation →](template_ICEqube_CMKT/7.2/README.md)
 
 ### Infoblox Grid Manager Template
 Location: [template_infoblox_grid_manager/7.4/](template_infoblox_grid_manager/7.4/)
@@ -100,25 +83,52 @@ Production-focused hybrid monitoring template for Infoblox Grid Manager combinin
 
 [View Full Documentation →](template_infoblox_grid_manager/7.4/README.md)
 
+### MikroTik RDS2216 ROSE Storage Template
+Location: [template_mikrotik_rose_rds2216/7.4/](template_mikrotik_rose_rds2216/7.4/)
+
+Enterprise-grade monitoring template for MikroTik RDS2216 ROSE (RouterOS Enhanced Storage) storage switches providing comprehensive visibility into high-capacity NVMe RAID storage systems through dual monitoring methods.
+
+**Key Features:**
+- 64-bit storage metrics for accurate monitoring of 60TB+ RAID volumes (REST API)
+- Comprehensive NVMe SMART monitoring (51 items per drive)
+- Advanced RAID health tracking (state, space, I/O, filesystem integrity)
+- Complete system health (CPU, memory, temperatures, fans, power)
+- Interactive dashboard with 6 category-specific pages
+- NOC-ready triggers with manual_close support
+- Auto-discovery for CPU cores, interfaces, sensors, RAID arrays, NVMe drives
+- Zabbix 7.4 optimized with graph prototypes
+
+[View Full Documentation →](template_mikrotik_rose_rds2216/7.4/README.md)
+
+### Mozilla HTTP Observatory Template
+Location: [template_mozilla_http_observatory/7.4/](template_mozilla_http_observatory/7.4/)
+
+Security-focused HTTP agent monitoring template for Mozilla HTTP Observatory API that provides continuous website hardening visibility in Zabbix through scheduled scan telemetry.
+
+**Key Features:**
+- Automated multi-target discovery using user macros
+- Live Observatory scan execution via API requests
+- Grade compliance alerting with regex-based policy control
+- Security posture telemetry (grade, score, tests, status, errors)
+- Target normalization and deduplication with JavaScript preprocessing
+- NOC/SOC-friendly trigger model with manual_close support
+- Zabbix 7.4 native LLD item/trigger prototypes
+
+[View Full Documentation →](template_mozilla_http_observatory/7.4/README.md)
+
 ## Repository Structure
 ```
 .
-├── template_docsis_cable_modem/
-│   └── 7.2/
-│       ├── README.md
-│       ├── template_docsis_cable_modem.yaml
-│       └── files/
-│           └── img/
-├── template_ICEqube_CMKT/
-│   └── 7.2/
-│       ├── README.md
-│       ├── template_iceqube_cmkt.yaml
-│       └── files/
-│           └── img/
 ├── template_bard_4000_series_hvac/
 │   └── 7.2/
 │       ├── README.md
 │       ├── template_bard_4000_series_hvac.yaml
+│       └── files/
+│           └── img/
+├── template_docsis_cable_modem/
+│   └── 7.2/
+│       ├── README.md
+│       ├── template_docsis_cable_modem.yaml
 │       └── files/
 │           └── img/
 ├── template_ge_abb_cp841/
@@ -127,10 +137,10 @@ Production-focused hybrid monitoring template for Infoblox Grid Manager combinin
 │       ├── template_ge_abb_cp841.yaml
 │       └── files/
 │           └── img/
-├── template_mikrotik_rose_rds2216/
-│   └── 7.4/
+├── template_ICEqube_CMKT/
+│   └── 7.2/
 │       ├── README.md
-│       ├── template_mikrotik_rose_rds2216.yaml
+│       ├── template_iceqube_cmkt.yaml
 │       └── files/
 │           └── img/
 ├── template_infoblox_grid_manager/
@@ -139,17 +149,29 @@ Production-focused hybrid monitoring template for Infoblox Grid Manager combinin
 │       ├── infoblox-grid-manager-template.yaml
 │       └── files/
 │           └── img/
+├── template_mikrotik_rose_rds2216/
+│   └── 7.4/
+│       ├── README.md
+│       ├── template_mikrotik_rose_rds2216.yaml
+│       └── files/
+│           └── img/
+├── template_mozilla_http_observatory/
+│   └── 7.4/
+│       ├── README.md
+│       ├── template_mozilla_http_observatory.yaml
+│       └── files/
+│           └── img/
 └── README.md
 ```
 
 ## Requirements
 
-- Zabbix Server 7.2 or newer (7.4+ required for MikroTik ROSE and Infoblox Grid Manager templates)
+- Zabbix Server 7.2 or newer (7.4+ required for MikroTik ROSE, Mozilla HTTP Observatory, and Infoblox Grid Manager templates)
 - SNMP access to monitored devices
 - Network connectivity (ICMP and UDP 161)
 - Valid SNMP community string or SNMPv3 credentials
 - REST API access (MikroTik ROSE template only)
-- HTTPS API access on TCP 443 (Infoblox Grid Manager template WAPI)
+- HTTPS API access on TCP 443 (Infoblox Grid Manager WAPI and Mozilla HTTP Observatory API templates)
 
 ## Installation
 
@@ -184,4 +206,4 @@ This project is open source and available under the [MIT License](LICENSE).
 
 ---
 
-**Last Updated:** March 13, 2026
+**Last Updated:** April 22, 2026
